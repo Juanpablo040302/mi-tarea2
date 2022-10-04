@@ -1,0 +1,152 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:helvetica;
+}
+*::selection{
+  background-color: transparent;
+}
+img:hover{
+  cursor:pointer;
+}
+.main-container{
+  width:100%;
+  height: 100vh;
+  background-color:#0ad5dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculadora{
+  width:20%;
+  height: 60%;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-flow: column;
+  color:#454545;
+  font-size:19px;
+}
+.pantalla{
+  background:#404040;
+  width:100%;
+  height: 25%;
+  border-bottom:1px solid #f1f1f1;
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+  color:#fff;
+  font-size:33px;
+
+}
+.historial{
+  width:25%;
+  height: 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.impresion{
+  width:75%;
+  height: 35%;
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+  padding-right: 25px;
+  overflow: hidden;
+  border:none;
+  background: transparent;
+  outline:none;
+  color:#fff;
+  cursor:default;
+  padding-left: 20px;
+    font-size:33px;
+}
+.contenedor-botones{
+  width:100%;
+  height: 75%;
+}
+.row{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+.boton{
+  width:24%;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  background:#f1f1f1;
+  border:none;
+  outline: none;
+  font-family:helvetica;
+  font-size: 19px;
+  color:#454545;
+}
+.boton:hover{
+  background:#c0c0c0;
+  transition:0.2s ease;
+}
+
+/*------------------Dialog------------------*/
+
+dialog{
+  position:absolute;
+  top:20%;
+  margin:0 auto;
+  width: 20%;
+  height: 60%;
+  background: rgba(0,0,0,0.8);
+  border:none;
+  color:#fff;
+  font-size: 18px;
+  overflow: hidden;
+}
+.localhistoryheader{
+  background: #404040;
+  display:flex;
+  height:15%;
+  align-items: center;
+}
+.icono{
+  width:10%;
+  display: flex;
+  align-items: center;
+}
+.back{
+  padding-left:20px;
+}
+.delete{
+  padding-right: 20px;
+}
+.title{
+  width:70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.localhistorybody{
+  height: 85%;
+  overflow: auto;
+  padding: 10px;
+}
+.localhistorybody::-webkit-scrollbar{
+  width:2%;
+}
+.localhistorybody::-webkit-scrollbar-thumb{
+  background:#fff;
+  height: 10%;
+  border-radius: 20px;
+}
+.localhistoryItem{
+  width:100%;
+  height:60px;
+  border-bottom:solid 1px gray;
+  font-size:30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
